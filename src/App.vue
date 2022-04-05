@@ -1,16 +1,19 @@
 <script setup lang="ts">
-import { TicketIcon } from '@heroicons/vue/outline';
+import { useRouter } from 'vue-router';
+const router = useRouter();
 </script>
 
 <template>
-    <div class="min-h-screen min-w-screen bg-orange-400 font-roboto">
-        <div class="min-h-screen max-w-xl container mx-auto bg-orange-400">
-            <div>
-                <h1 class="font-righteous text-6xl text-yellow-50 flex items-center justify-between px-4">
-                    <TicketIcon class="h-16 mr-2" />
-                    <span>¡QueBoleta!</span>
-                    <TicketIcon class="h-16 mr-2" />
-                </h1>
+    <div class="min-h-screen min-w-screen bg-green-400 font-roboto">
+        <div class="min-h-screen max-w-xl container mx-auto bg-green-400">
+            <div class="flex justify-center pt-5">
+                <img
+                    class="hover:scale-110 duration-100 cursor-pointer"
+                    @click="router.push({ name: 'welcome' })"
+                    src="./assets/logo.png"
+                    width="200"
+                    alt="Logo"
+                />
             </div>
             <router-view />
         </div>

@@ -3,7 +3,7 @@ import VInput from '../components/inputs/VInput.vue';
 </script>
 
 <template>
-    <div class="max-w-xs mx-auto mt-10">
+    <div class="max-w-xs mx-auto mt-10 bg-white bg-opacity-20 p-6 rounded-lg shadow">
         <VInput label="Email" class="mb-4" />
         <VInput label="Contraseña" class="mb-4" type="password" />
         <div class="flex justify-end">
